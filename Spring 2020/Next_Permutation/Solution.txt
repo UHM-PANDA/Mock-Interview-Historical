@@ -1,0 +1,55 @@
+```
+Python
+```
+```python
+def next_permutation(perm):
+    inversion_point = len(perm) - 2
+    while inversion_point >= 0 and perm[inversion_point] >= perm[inversion_point + 1]:
+        inversion_point -= 1
+
+    if inversion_point == -1:
+        return []
+    
+    for i in reversed(range(inversion_point + 1, len(perm))):
+        if perm[i] > perm[inversion_point]:
+            perm[inversion_point], perm[i] = perm[i], perm[inversion_point]
+            break
+
+    return perm[:inversion_point + 1] + reversed(perm[inversion_point + 1:])
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+```
+```
+Java
+```
+```java
+public int[] next_permutation(int[] perm) {
+    int inversion_point = perm.length - 2;
+
+    while (inversion_point >= 0 && perm[inversion_point >= perm[inversion_point + 1]) i--;
+    if (inversion_point == -1) return [];
+
+    for (int i = perm.length - 1; i >= inversion_point + 1; i--) {
+        if perm[i] > perm[inversion_point] {
+            int temp = perm[inversion_point];
+            perm[inversion_point] = perm[i];
+            perm[i] = temp;
+            break;
+        }
+    }
+    
+    for (int i = inversion_point + 1; i < (inversion_point + 1) / 2; i++) {
+        int temp = perm[i];
+        perm[i] = perm[perm.length - 1 - i];
+        perm[perm.length - 1 - i] = temp;
+    }
+    return perm;
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+```
+
+1) There isn't a brute force solution since the "brute force" version of this algorithm is actually just as difficult (if not even more complicated) then the optimized version
+2) A key observation that you should make when doing this problem is that you want to make the smallest increment to the array.  Therefore, you search for the first value that's smaller than the value to it's right.  Then swap this value with the value's successor in the right subarray.  However, why can't you just leave the result like this?
+3) If all of the values in the input array are distinct, is there room for constant optimization in this algortihm?
