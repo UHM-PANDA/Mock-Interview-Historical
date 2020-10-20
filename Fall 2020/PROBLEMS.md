@@ -46,26 +46,26 @@ October 5 – 9, 2020
 ### Week 6: “Random Week”
 October 12 – 16, 2020
 ```
-1) RPN
-2) Median number of two sorted arrays
+1) Palindrome
+2) RPM
 3) Compute the Levenshtein Distance
 ```
 
-### Week 7: “Recursion Pt2 Electric Boogaloo”
-October 19 – 23, 2020
-```
-1) Knapsack
-2) Rod Cutting
-3) Sudoku Solver
-```
-
-### Week 8: “SPOOKY WEEK”
+### Week 7: “SPOOKY WEEK”
 October 26 – 30, 2020
 open book / internet / can’t use library operations
 ```
 1) Overlapping n-gons
 2) Layered matrix rotation
 3) Overlapping n-gons (in n dimensions) Kana’i will have golden panda prize
+```
+
+### Week 8: “Recursion Pt2 Electric Boogaloo”
+October 19 – 23, 2020
+```
+1) Knapsack
+2) Rod Cutting
+3) Sudoku Solver
 ```
 
 ### Week 9: “Arranging Arrays”
