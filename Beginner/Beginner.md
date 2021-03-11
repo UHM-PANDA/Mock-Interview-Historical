@@ -1,5 +1,3 @@
-# Week 1: "Start with the Romans"
-
 #### 1) Decimal to Roman
 Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 https://leetcode.com/problems/integer-to-roman/
@@ -69,4 +67,17 @@ Output: 2
 ```
 Input: [9, 5, 3, 1]
 Output: 4
+```
+
+#### 4) Even Odd Sum
+Check if a sum of sequence of consecutive n integers is even or odd or neither. The sequence can start from any number on the real integer line. Return 1 for even, return 0 for odd, return -1 for neither.
+```
+input: 2
+output: 0
+
+input: 4
+ouput: 1
+
+input: 5
+output: -1
 ```

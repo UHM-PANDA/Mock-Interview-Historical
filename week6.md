@@ -78,3 +78,15 @@ exection -> execution (insert 'u')
 Time Complexity: O(log (m+n))
 Space Complexity:
 ```
+
+#### 3) Test Collatz Conjecture
+Collatz Conjecture: take any natural number, if it is odd, triple it and add 1, if even, halve it. Repeat the process indefinitely and no matter what number, the sequence will always end with 1.
+Given an long n, test the Collatz Conjecture for the first n integers. If all the integers pass the Collatz Conjecture, return true. Otherwise return false.
+
+```
+Example sequence: 11 -> 11,34,17,52,26,13,40,20,10,5,16,8,4,2,1
+
+input: 3
+output: true
+
+```
